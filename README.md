@@ -49,7 +49,7 @@ print("El promedio de" + str(numeros) + " es: " + str(promedio))
 :checkered_flag: **EL PROGRAMA EJECUTADO SE VE ASI**
 
 <div align='center'>
-<figure> <img src=" alt="" width="700" height="auto"/></br>
+<figure> <img src="https://i.postimg.cc/76D4JqDd/image.png alt="" width="700" height="auto"/></br>
 <figcaption><b> </b></figcaption></figure>
 </div>
 
@@ -89,7 +89,7 @@ if __name__ == "__main__":
 :checkered_flag: **EL PROGRAMA EJECUTADO SE VE ASI**
 
 <div align='center'>
-<figure> <img src=" alt="" width="700" height="auto"/></br>
+<figure> <img src="https://i.postimg.cc/t4KpyhcX/image.png alt="" width="700" height="auto"/></br>
 <figcaption><b> </b></figcaption></figure>
 </div>
 
@@ -129,21 +129,68 @@ if __name__ == "__main__":
 :checkered_flag: **EL PROGRAMA EJECUTADO SE VE ASI**
 
 <div align='center'>
-<figure> <img src=" alt="" width="700" height="auto"/></br>
+<figure> <img src="https://i.postimg.cc/HnDyycjH/image.png alt="" width="700" height="auto"/></br>
 <figcaption><b> </b></figcaption></figure>
 </div>
 
 ### :round_pushpin: PUNTO #4 
-+  Revisar que son los algoritmos de sorting, entender bubble-sort (enlace a implementación).
++  Revisar que son los algoritmos de sorting, entender bubble-sort ([enlace](https://www.geeksforgeeks.org/bubble-sort/) a implementación).
+### :feet: Algoritmos de sorting
+El algoritmo de ordenamiento de burbuja (Bubble Sort en inglés) es un algoritmo simple que se utiliza para ordenar una lista o un arreglo de elementos. El nombre "burbuja" proviene del hecho de que los elementos más grandes "burbujean" hacia arriba a medida que se comparan y se intercambian a lo largo del arreglo, hasta que todos los elementos estén en su posición correcta.
 
-#### :space_invader: CODIGO DEL PROGRAMA
+El algoritmo funciona de la siguiente manera:
+
+1. Comenzando desde el primer elemento, se compara cada par adyacente de elementos en el arreglo.
+2. Si el par de elementos está en el orden incorrecto (el elemento de la derecha es menor que el de la izquierda), se intercambian.
+3. Se repite el paso anterior para cada par de elementos adyacentes a lo largo del arreglo, desde el principio hasta el final.
+4. Una vez que se completa un recorrido completo del arreglo, el elemento más grande se coloca en la posición final.
+5. Se repiten los pasos 1 al 4 para el resto del arreglo, excluyendo el último elemento en cada iteración, ya que ya está en su posición correcta.
+
+El algoritmo de ordenamiento de burbuja continúa iterando sobre el arreglo hasta que todos los elementos estén ordenados en forma ascendente.
+#### Ventajas:
+- Bubble sort es fácil de entender e implementar.
+- No requiere espacio adicional de memoria.
+- Es adaptable a diferentes tipos de datos.
+- Es un algoritmo de ordenamiento estable, lo que significa que los elementos con el mismo valor de clave mantienen su orden relativo en la salida ordenada.
+
+#### Desventajas:
+- Bubble sort tiene una complejidad temporal de O(n^2), lo que lo hace muy lento para conjuntos de datos grandes.
+- No es eficiente para conjuntos de datos grandes, ya que requiere múltiples recorridos a través de los datos.
+- Bubble sort es un algoritmo de ordenamiento basado en comparaciones, lo que significa que requiere un operador de comparación para determinar el orden relativo de los elementos en el conjunto de datos de entrada. Si bien esto no es necesariamente una desventaja, puede limitar la eficiencia del algoritmo en ciertos casos.
+
+Referencia: [Bubble Sort - GeeksforGeeks](https://www.geeksforgeeks.org/bubble-sort/)
+    
+#### :space_invader: CODIGO EJEMPLO DEL ALGORITMO
 ```ruby
+# Definir el algoritmo bubble_sort 
+def bubble_sort(lista):
+    # Inicializar n con la cantidad de elementos de la lista
+    n = len(lista)
 
+    # Pasar por todos los elementos de la lista excepto el último
+    for i in range(n - 1):
+        # Pasar por todos los elementos restantes en cada iteración
+        # El rango disminuye en cada iteración para evitar comparaciones innecesarias
+        for j in range(n - i - 1):
+            # Comparar dos elementos adyacentes
+            if lista[j] > lista[j + 1]:
+                # Intercambiar los elementos si están en el orden incorrecto
+                lista[j], lista[j + 1] = lista[j + 1], lista[j]
+
+# Pedir al usuario que ingrese los números del arreglo y convertir la n en una lista de números enteros
+n = input("Ingrese los números separados por espacios que quiera ordenar: ")
+numeros = [int(i) for i in n.split()]
+# Imprimir la lista original
+print("Lista original:"+ str(numeros))
+# Llamar a la función bubble_sort para ordenar la lista
+bubble_sort(numeros)
+# Imprimir la lista ordenada
+print("Lista ordenada:" + str(numeros))
 ```
 :checkered_flag: **EL PROGRAMA EJECUTADO SE VE ASI**
 
 <div align='center'>
-<figure> <img src=" alt="" width="700" height="auto"/></br>
+<figure> <img src="https://i.postimg.cc/HxKtPkxP/image.png alt="" width="700" height="auto"/></br>
 <figcaption><b> </b></figcaption></figure>
 </div>
 
