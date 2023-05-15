@@ -56,7 +56,14 @@ print("El promedio de" + str(numeros) + " es: " + str(promedio))
 
 ### :round_pushpin: PUNTO #2
 + Desarrollar un algoritmo que calcule el producto punto de dos arreglos de números enteros (reales) de igual tamaño.
+### :feet: Producto punto
+También conocido como producto escalar o producto interno, es una operación matemática que se aplica a dos vectores y produce un resultado escalar
+El producto punto de dos vectores se calcula multiplicando los elementos correspondientes de los vectores y sumando los productos resultantes. Si tenemos dos vectores A y B en el espacio tridimensional, el producto punto se representa como:
+    
+$$A · B = (A1 * B1) + (A2 * B2) + (A3 * B3)$$
 
+Donde **A1, A2, A3 y B1, B2, B3** son los componentes de los vectores A y B, respectivamente.
+    
 #### :space_invader: CODIGO DEL PROGRAMA
 ```ruby
 # Definir una función para calcular el producto punto de dos arreglos de números enteros
