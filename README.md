@@ -64,6 +64,8 @@ $$A · B = (A1 * B1) + (A2 * B2) + (A3 * B3)$$
 
 Donde **A1, A2, A3 y B1, B2, B3** son los componentes de los vectores A y B, respectivamente.
     
+Referencia: [Dot Product - Cuemath](https://www.cuemath.com/algebra/dot-product/)   
+    
 #### :space_invader: CODIGO DEL PROGRAMA
 ```ruby
 # Definir una función para calcular el producto punto de dos arreglos de números enteros
